@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beach Brolly Bros | Umbrella Rescue & Rehabilitation</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <svg width="50" height="50" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="45" fill="#f8d849" stroke="#e67700" stroke-width="2"/>
+          <path d="M50 10 L50 90" stroke="#e67700" stroke-width="4"/>
+          <path d="M20 30 Q50 10 80 30" fill="none" stroke="#e67700" stroke-width="4"/>
+        </svg>
+        <h1>Beach Brolly Bros</h1>
+      </div>
+      <ul>
+        <li><a href="#mission">Our Mission</a></li>
+        <li><a href="#rescue">Rescue Stories</a></li>
+        <li><a href="#contact">Join the Cause</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="umbrella-animation">
+        <!-- Flying umbrellas will be dynamically added here -->
+      </div>
+      <h2>Saving Beach Umbrellas,<br>One Storm at a Time</h2>
+      <p style="color: var(--dark);"><i class="fas fa-map-marker-alt"></i> Mullumbimby Creek, NSW</p>
+    </section>
+
+    <section id="mission" class="mission">
+      <h2><i class="fas fa-heart"></i> Our Noble Mission</h2>
+      <div class="mission-content">
+        <div class="mission-text">
+          <p>Under the stalwart leadership of Commander Ken, we brave the elements to rescue, rehabilitate, and release displaced beach umbrellas throughout the Byron Hinterland.</p>
+          <p>Every year, countless beach umbrellas fall victim to sudden coastal squalls and freaky storms. We're here to give these wayward sun shields a second chance at life.</p>
+        </div>
+        <div class="stats">
+          <div class="stat-box">
+            <span class="number" id="rescueCount">127</span>
+            <span class="label">Umbrellas Rescued</span>
+          </div>
+          <div class="stat-box">
+            <span class="number" id="releaseCount">98</span>
+            <span class="label">Successfully Released</span>
+          </div>
+          <div class="stat-box">
+            <span class="number" id="picnicCount">29</span>
+            <span class="label">Picnic Tables Protected</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="rescue" class="rescue-stories">
+      <h2><i class="fas fa-umbrella-beach"></i> Recent Rescues</h2>
+      <div class="story-grid">
+        <article class="story-card">
+          <h3><i class="fas fa-wind"></i> The Great Wategos Windstorm</h3>
+          <p>Three striped warriors found tangled in pandanus trees. All successfully rehabilitated and now serving at The Pass cafe.</p>
+        </article>
+        <article class="story-card">
+          <h3><i class="fas fa-cloud-showers-heavy"></i> Tallow Beach Tempest</h3>
+          <p>A family of five beach umbrellas rescued from the dunes. The youngest now provides shade at Mullum Farmers Market.</p>
+        </article>
+        <article class="story-card">
+          <h3><i class="fas fa-hurricane"></i> Brunswick Heads Hurricane</h3>
+          <p>Emergency response to a distressed polka-dot specimen found wrapped around a Norfolk Pine.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2><i class="fas fa-paper-plane"></i> Join the Cause</h2>
+      <div class="contact-content">
+        <p>Spotted a distressed beach umbrella? Contact Commander Ken's Rapid Response Unit:</p>
+        <form id="contactForm">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Email" required>
+          <textarea placeholder="Umbrella Emergency Details" required></textarea>
+          <button type="submit">Send Alert</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p> 2023 Beach Brolly Bros | Mullumbimby Creek, NSW</p>
+    <p><i class="fas fa-heart"></i> No umbrella left behind</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
