@@ -142,7 +142,7 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
-  color: white;
+  color: #192000;
 }
 
 .mission::before {
