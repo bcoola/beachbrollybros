@@ -76,8 +76,8 @@ main {
 }
 
 .hero {
-  min-height: 100vh; /* Changed from height to min-height */
-  height: -webkit-fill-available; /* For iOS Safari */
+  height: 60vh; /* Original desktop height */
+  min-height: 400px; /* Minimum height to prevent content from being too squished */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -89,21 +89,21 @@ main {
   overflow: hidden;
   background-size: 300% 300%;
   animation: gradientShift 15s ease infinite;
-  padding: 2rem 1rem; /* Added padding for better spacing */
+  padding: 2rem 1rem;
 }
 
-@supports (-webkit-touch-callout: none) {
+@media screen and (max-width: 767px) {
   .hero {
-    height: -webkit-fill-available;
+    height: 100vh; /* Full height on mobile */
+    height: -webkit-fill-available; /* For iOS Safari */
   }
 }
 
 @media screen and (max-height: 500px) {
   .hero {
-    min-height: 500px; /* Minimum height for very short screens */
+    height: auto; /* Allow content to determine height on very short screens */
   }
 }
-
 
 @keyframes gradientShift {
   0% { background-position: 0% 50%; }
