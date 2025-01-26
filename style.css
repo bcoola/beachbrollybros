@@ -115,19 +115,19 @@ main {
 
 @keyframes flyAround {
   0% {
-    transform: translate(-100px, 100vh) rotate(0deg) scale(0.5);
+    transform: translate(-100px, 100vh) rotate(0deg) scale(0.25);
   }
   25% {
-    transform: translate(25vw, 25vh) rotate(180deg) scale(5);
+    transform: translate(25vw, 0) rotate(180deg) scale(10);
   }
   50% {
-    transform: translate(75vw, 75vh) rotate(360deg) scale(0.7);
+    transform: translate(75vw, 0) rotate(360deg) scale(0.35);
   }
   75% {
-    transform: translate(50vw, 25vh) rotate(540deg) scale(4);
+    transform: translate(50vw, 0) rotate(540deg) scale(8);
   }
   100% {
-    transform: translate(-100px, 100vh) rotate(720deg) scale(0.5);
+    transform: translate(-100px, 100vh) rotate(720deg) scale(0.25);
   }
 }
 
