@@ -76,7 +76,8 @@ main {
 }
 
 .hero {
-  height: 60vh;
+  min-height: 100vh; /* Changed from height to min-height */
+  height: -webkit-fill-available; /* For iOS Safari */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -88,7 +89,21 @@ main {
   overflow: hidden;
   background-size: 300% 300%;
   animation: gradientShift 15s ease infinite;
+  padding: 2rem 1rem; /* Added padding for better spacing */
 }
+
+@supports (-webkit-touch-callout: none) {
+  .hero {
+    height: -webkit-fill-available;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .hero {
+    min-height: 500px; /* Minimum height for very short screens */
+  }
+}
+
 
 @keyframes gradientShift {
   0% { background-position: 0% 50%; }
