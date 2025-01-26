@@ -291,9 +291,13 @@ footer {
   }
   
   nav ul {
-    flex-direction: column;
-    text-align: center;
-    gap: 1rem;
+    flex-direction: row; /* Changed to row to display items side by side */
+    justify-content: center; /* Center the items horizontally */
+    gap: 1rem; /* Maintain some space between items */
+  }
+
+  nav ul li {
+    display: inline; /* Ensure list items remain inline */
   }
   
   .hero h2 {
